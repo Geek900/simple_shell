@@ -65,7 +65,7 @@ int find_builtin(info_t *info)
 		{"cd", _mycd},
 		{"alias", _myalias},
 		{NULL, NULL}
-	};
+	}
 
 	for (i = 0; builtintbl[i].type; i++)
 		if (_strcmp(info->argv[0], builtintbl[i].type) == 0)
